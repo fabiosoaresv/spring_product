@@ -62,4 +62,4 @@ Response:
 $ curl -X DELETE http://localhost:8080/products/1
 ```
 
-Response: **empty**
+Response: **Product deleted successfully**
