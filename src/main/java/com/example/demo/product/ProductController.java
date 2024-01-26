@@ -1,3 +1,4 @@
+package com.example.demo.product;
 
 // ProductController.java
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,8 @@ public class ProductController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable Long id) {
+    public String deleteProduct(@PathVariable Long id) {
         productRepository.deleteById(id);
+        return "Product deleted successfully";
     }
 }

@@ -1,3 +1,4 @@
+package com.example.demo.product;
 
 // Product.java
 import javax.persistence.Entity;
@@ -11,13 +12,13 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
     private double price;
 
-    // construtores, getters e setters
+    public Long getId() {
+        return id;
+    }
 
-    // Getter e Setter para o campo 'name'
     public String getName() {
         return name;
     }
@@ -26,7 +27,6 @@ public class Product {
         this.name = name;
     }
 
-    // Getter e Setter para o campo 'price'
     public double getPrice() {
         return price;
     }
